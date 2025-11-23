@@ -1,0 +1,124 @@
+/* RESET BASICS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+/* -------------------------------------- */
+/* HEADER */
+/* -------------------------------------- */
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 80px;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* -------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------- */
+
+.hero {
+    height: 900px;
+    background-image: url('images/Object.PNG');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Overlay fade effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(10, 10, 35, 0.6),
+        rgba(10, 10, 30, 0.8)
+    );
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-tags span {
+    margin: 0 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    margin-top: 35px;
+    padding: 14px 28px;
+    background: #C271FF;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(194, 113, 255, 0.5);
+}
+
+/* “Learn from the pros” */
+.hero-pros-title {
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-pros-title h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.hero-pros-title h2 span {
+    color: #C271FF;
+    font-weight: bold;
+}
