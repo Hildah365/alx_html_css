@@ -1,0 +1,185 @@
+/* ============================================ */
+/* GLOBAL STYLING                               */
+/* ============================================ */
+
+:root{
+    --accent:#FF6565;
+    --text-dark:#0B0D17;
+    --text-light:#ffffff;
+    --gray:#7c8894;
+}
+
+body{
+    margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background:white;
+    color:var(--text-dark);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:25px 0;
+}
+header img{
+    height:45px;
+}
+header nav a{
+    margin-left:20px;
+    text-decoration:none;
+    color:var(--text-dark);
+    font-weight:600;
+}
+header nav a:hover{
+    color:var(--accent);
+}
+
+/* HERO SECTION */
+.hero{
+    height:450px;
+    background:url("images/headphones_hero_1.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+.hero h1{
+    font-size:38px;
+    font-weight:700;
+}
+.hero p{
+    width:60%;
+    margin:auto;
+    font-size:17px;
+    opacity:.9;
+}
+.cta-btn{
+    background:var(--accent);
+    padding:12px 26px;
+    border:none;
+    border-radius:30px;
+    font-weight:600;
+    color:white;
+    margin-top:15px;
+    cursor:pointer;
+}
+.ghost{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    padding:12px 26px;
+    border-radius:30px;
+    margin-left:10px;
+    cursor:pointer;
+}
+
+/* ============================================ */
+/* WHAT WE DO — WITH ANIMATION                  */
+/* ============================================ */
+
+.what-we-do{
+    text-align:center;
+    padding:80px 0;
+}
+.what-items{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:50px;
+}
+.what-card{
+    width:250px;
+    padding:25px;
+    border-radius:14px;
+    background:white;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.05);
+
+    /* 🚀 Idle breathing animation */
+    animation: float 4s ease-in-out infinite;
+    transition: transform .35s ease;
+}
+
+/* Hover Effect — POP animation */
+.what-card:hover{
+    transform:scale(1.09) translateY(-6px);
+}
+
+/* ICON ORANGE BIG */
+.icon{
+    font-size:58px;
+    color:var(--accent);
+    display:block;
+    margin-bottom:12px;
+}
+
+/* ============================================ */
+/* OUR RESULTS — PENTAGONS WITH ANIMATION       */
+/* ============================================ */
+
+.results{
+    background:black;
+    text-align:center;
+    padding:80px 0;
+    color:white;
+}
+.results-row{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:45px;
+}
+
+/* Pentagon shape recreated with CSS only */
+.pentagon{
+    width:110px;
+    height:110px;
+    background:var(--accent);
+    clip-path:polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    font-size:22px;
+    font-weight:700;
+    color:white;
+
+    animation: float 4s ease-in-out infinite;
+    transition:transform .35s ease;
+}
+
+/* Hover POP */
+.pentagon:hover{
+    transform:scale(1.13) rotate(4deg);
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+}
+
+/* ============================================ */
+/* FOOTER                                       */
+/* ============================================ */
+
+footer{
+    background:#0A0A0A;
+    text-align:center;
+    padding:35px 0;
+    color:white;
+    margin-top:70px;
+}
+footer p{
+    opacity:.7;
+    font-size:15px;
+}
