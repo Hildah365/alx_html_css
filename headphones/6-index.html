@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headphones — Our Results (CSS Pentagons)</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Holberton Custom Icons (optional) -->
+  <link rel="stylesheet" href="fonts/holberton/holberton-icons.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="6-styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="images/logo_headphones.png" alt="Headphones Logo" class="logo">
+        <h1>HEADPHONES</h1>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#what">What we do</a></li>
+          <li><a href="#results">Our results</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button class="cta-btn">Get in touch</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="img" aria-label="Woman enjoying music with headphones">
+    <div class="container">
+      <div class="hero-inner">
+        <h2>Lorem ipsum dolor sit amet lorem ipsum</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="hero-cta">
+          <button class="cta-btn">Call to action</button>
+          <button class="ghost">Learn more</button>
+        </div>
+
+        <p class="hero-text">This is a placeholder paragraph describing your product or service.</p>
+        <button class="hero-btn">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we do -->
+  <section id="what" class="features container">
+    <div class="intro">
+      <h3>What we do...</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, commodi.</p>
+    </div>
+
+    <div class="grid">
+      <article class="feature">
+        <div class="icon"><i class="holberton-icon icon-analytics"></i></div>
+        <h4>Analytics</h4>
+        <p>Track and measure performance of your audio experience.</p>
+      </article>
+
+      <article class="feature">
+        <div class="icon"><i class="holberton-icon icon-content"></i></div>
+        <h4>Content</h4>
+        <p>Create great stories, soundscapes, and playlists for your brand.</p>
+      </article>
+
+      <article class="feature">
+        <div class="icon"><i class="holberton-icon icon-music"></i></div>
+        <h4>Music</h4>
+        <p>Curated tracks and licensing for your projects.</p>
+      </article>
+
+      <article class="feature">
+        <div class="icon"><i class="holberton-icon icon-support"></i></div>
+        <h4>Support</h4>
+        <p>End-to-end technical help and UX tuning for headphones.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Our Results (CSS pentagons) -->
+  <section id="results" class="results container" aria-labelledby="results-heading">
+    <h2 id="results-heading" class="visually-hidden">Our results</h2>
+
+    <div class="results-inner">
+      <div class="results-text">
+        <h3>Our results speak for themselves</h3>
+        <p>We measure impact across conversion, engagement, retention and return. Below are small snapshots of our typical uplift.</p>
+      </div>
+
+      <div class="pentagon-grid" aria-hidden="false">
+        <div class="pentagon" role="img" aria-label="+12% Conversion">
+          <div class="pentagon-face">
+            <div class="pentagon-content">
+              <div class="pentagon-value">+12%</div>
+              <small class="pentagon-label">Conversion</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="pentagon" role="img" aria-label="+18% Engagement">
+          <div class="pentagon-face">
+            <div class="pentagon-content">
+              <div class="pentagon-value">+18%</div>
+              <small class="pentagon-label">Engagement</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="pentagon" role="img" aria-label="+9% Retention">
+          <div class="pentagon-face">
+            <div class="pentagon-content">
+              <div class="pentagon-value">+9%</div>
+              <small class="pentagon-label">Retention</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="pentagon" role="img" aria-label="+15% Return">
+          <div class="pentagon-face">
+            <div class="pentagon-content">
+              <div class="pentagon-value">+15%</div>
+              <small class="pentagon-label">Return</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact (kept minimal for this task) -->
+  <section id="contact" class="contact container">
+    <h3>Contact us</h3>
+    <p>Have a project or question? Send a message and we'll get back to you shortly.</p>
+    <form class="form" aria-label="Contact form" style="max-width:420px;margin:0 auto;">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Your message</label>
+      <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+      <button type="submit" class="submit">Send message</button>
+    </form>
+  </section>
+
+</body>
+</html>
